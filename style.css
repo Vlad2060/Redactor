@@ -1,0 +1,156 @@
+/* Common styles */
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+* {
+    transition: 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header styles */
+h3 {
+    color: rgb(58, 0, 250);
+    font-size: 5vh;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 2vh;
+    border-radius: 0 0 2vh 2vh;
+    min-height: 2vh;
+    min-width: 5vh;
+    z-index: 11;
+}
+
+/* Editor styles */
+#editor {
+    min-width: 88vh;
+    width: auto;
+    height: 50vh;
+    margin: 5vh;
+    outline: 0.5vh dashed rgb(217, 217, 217);
+    border-radius: 2vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#editor h2 {
+    position: absolute;
+    max-width: 90vh;
+    max-height: 40vh;
+    font-size: 3vh;
+    overflow: hidden;
+}
+#editor img {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+/* Panel styles */
+.panel {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(231, 231, 231);
+    overflow: hidden;
+    margin: 1vh;
+}
+
+.panel button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.panel button:first-child {
+    width: 11vh;
+    display: flex;
+}
+
+.panel:hover button {
+    width: 11vh;
+    height: 10vh;
+}
+
+.panel button:hover {
+    transition: 0.2s;
+    background-color: rgb(217, 217, 217);
+}
+
+.panel i {
+    font-size: 3vh;
+}
+
+.panel button#updateImage {
+    background-color: rgb(58, 0, 250);
+}
+
+.panel button#updateImage i {
+    color: white;
+}
+
+.panel button:hover#updateImage {
+    background-color: rgb(121, 80, 255);
+}
+
+.panel input {
+    position: relative;
+    width: 20vh;
+    background-color: rgb(232, 232, 232);
+    border: none;
+    margin: 1vh;
+}
+.panel input {
+    border: 0.2vh solid rgb(162, 162, 162);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1vh;
+    font-size: 2vh;
+    width: 10vh;
+    height: 5vh;
+}
+.panel input:last-child {
+    width: 6vh;
+    height: 6vh;
+    padding: 0;
+}
+.panel input * {
+    border: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Приклад стилів для кнопок на панелі */
+.panel button:nth-child(2),
+.panel button:nth-child(3),
+.panel button:nth-child(4),
+.panel button:nth-child(5),
+.panel button:nth-child(6),
+.panel button:nth-child(7),
+.panel button:nth-child(8) {
+    width: 11vh;
+    display: flex;
+}
+
+.panel button:hover:not(#updateImage) {
+    background-color: rgb(217, 217, 217);
+}

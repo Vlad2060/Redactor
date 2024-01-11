@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зображення редактора</title>
+    <script src="https://kit.fontawesome.com/c5d14ad0a8.js" crossorigin="anonymous"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h3>Redactor</h3>
+
+    <div id="editor">
+        <img>
+        <!-- Ваш редактор тексту тут -->
+        <h2 id="text" contenteditable="true">Введіть текст тут...</h2>
+    </div>
+
+    <div class="panel">
+        <input type="file" id="fileInput" style="display: none;">
+        <button id="updateImage" onclick="openFilePicker()"><i class="fas fa-image"></i></button>
+        <button onclick="saveImage()"><i class="fas fa-download"></i></button>
+        <button onclick="remove()"><i class="fas fa-ban"></i></button>
+    </div>
+
+    <div class="panel">
+        <input type="number" max="10" id="font-size-picker" contenteditable="false">
+        <input type="color" id="font-color-picker">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
